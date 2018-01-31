@@ -3,8 +3,7 @@ let restaurants,
   cuisines
 var map
 var markers = []
-/*
-console.log("waddup")
+
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register('service-worker.js')
   .then(function(registration) {
@@ -14,7 +13,7 @@ if (navigator.serviceWorker) {
     console.log('Registration failed: ', error);
   });
 }
-*/
+
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */

@@ -23,9 +23,8 @@ self.addEventListener('fetch', catchFetch);
 
 function catchFetch(event) {
 if(event.request.url.startsWith("http://localhost:8000")){
-  console.log({url:event.request.url})
   event.respondWith(
-    caches.match(event.request)
+    caches.match(event.request, {ignoreSearch: true})
   );}
 }
 
