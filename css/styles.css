@@ -156,6 +156,14 @@ nav h1 a {
   padding: 0 30px 25px;
   text-align: left;
 }
+
+@media screen and (max-width: 460px){
+	#restaurants-list {
+		display: inline;
+		padding: 0px 0px 0px 0px;
+	}
+}
+
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
