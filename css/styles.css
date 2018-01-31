@@ -44,7 +44,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -209,7 +209,7 @@ nav h1 a {
 @media screen and (min-width: 1400px) {
 	.inside #map-container {
 	  background: blue none repeat scroll 0 0;
-	  height: 87%;
+	  height: 100%;
 	  position: fixed;
 	  right: 0;
 	  top: 80px;
@@ -226,8 +226,8 @@ nav h1 a {
 	}
 	.inside #footer {
 	  bottom: 0;
-	  position: absolute;
-	  width: 50%;
+	  position: static;
+	  width: calc(50% - 30px);
 	}
 }
 @media screen and (max-width: 1400px) {
