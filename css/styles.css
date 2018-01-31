@@ -241,16 +241,23 @@ nav h1 a {
 	#restaurant-container, #reviews-container {
 	  border-bottom: 1px solid #d9d9d9;
 	  border-top: 1px solid #fff;
-	  padding: 0px 0px 0px 50px;
+	  padding: 0px 0px 0px 0px;
 	  width: 100%;
 		position: static;
 	}
+
+	#breadcrumb {
+	    padding: 5px 40px 5px;
+	    width: 100%;
+	}
+
 	#reviews-list li {
 		margin: 10px;
 	}
 	.inside #footer {
 	  position: static;
-	  width: 100%;
+		bottom: 0;
+	  width: calc(100% - 30px);
 	}
 }
 
@@ -359,4 +366,10 @@ nav h1 a {
 }
 #reviews-list li p:nth-child(4) {
 	padding: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+	#restaurant-name, #restaurant-img, #restaurant-address, #restaurant-cuisine, #reviews-container h2, #restaurant-hours, #reviews-list li{
+		margin-left: 50px;
+	}
 }
