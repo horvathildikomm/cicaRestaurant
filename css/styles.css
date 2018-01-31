@@ -368,7 +368,13 @@ nav h1 a {
 	padding: 15px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 520px) {
+	#restaurant-name, #restaurant-img, #restaurant-address, #restaurant-cuisine, #reviews-container h2, #restaurant-hours, #reviews-list li{
+		margin-left: 15px;
+	}
+}
+
+@media screen and (max-width: 1400px) and (min-width: 521px) {
 	#restaurant-name, #restaurant-img, #restaurant-address, #restaurant-cuisine, #reviews-container h2, #restaurant-hours, #reviews-list li{
 		margin-left: 50px;
 	}
